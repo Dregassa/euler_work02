@@ -8,7 +8,10 @@ int sum_from_one (int n){
 	return n*(n+1)/2;
 }
 
+int problem6(int n){
+	return sum_from_one(n)*sum_from_one(n) - sum_squares(n);	
+}
 int main(){
-	int result = sum_squares(100) - sum_from_one(100)*sum_from_one(100);
-	printf("%d \n", result);
+	printf("%d \n", problem6(10));
+	printf("%d \n", problem6(100));
 }
